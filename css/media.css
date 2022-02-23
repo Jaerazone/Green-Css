@@ -1,0 +1,28 @@
+body {
+    background-color: darkorange;
+    /* content: 480px 보다 작다;*/
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.item {
+    display: inline-block;
+    padding: 30px;
+    border: 2px sol yellow;
+    background-color: beige;
+}
+
+@media screen and (min-width :480px) {
+    body {
+        background-color: lightblue;
+        /*content: 480px 보다 크다;*/
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}/*min보다 클때 색나옴*/
+

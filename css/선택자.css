@@ -1,0 +1,103 @@
+.parents p {
+ background-color: blue;
+}
+
+.parents_children > p{
+    background-color: yellow;
+}
+
+.sibling ~ p {
+    background-color: aqua;
+}
+
+.adjacent + p {
+    background-color: cadetblue;
+}
+
+.hover:hover {
+    background-color: blueviolet;
+}
+
+.focus:focus {
+    color: crimson;
+    font-weight: bold;
+    
+}
+
+.input > input:checked + span {
+    color: coral;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.input >input:disabled + span {
+    text-decoration: line-through;
+}
+
+
+.first:first-child {
+    background-color: darkorange;
+}
+
+/*
+p:first-child {
+    background-color: darkorange;
+}
+
+div 안에서, 바로 밑줄 첫번째 p태그에만 적용됨. 
+    밑밑줄은 적용안됨.
+    다른것들도 부모 바로 안의p태그에서만 적용됨.
+*/
+
+.first:last-child {
+    background-color: aquamarine;
+}
+
+.first:nth-child(2) {
+    background-color: cornflowerblue;
+}
+
+p.type:first-of-type {
+    background-color: black;
+    color: red;
+}
+
+.pseudo > p::first-letter {
+    font-size: 2em;
+} 
+/*2em 두배*/
+
+.pseudo_lin >p::first-line {
+    text-decoration: underline;
+}
+
+.before_after >p::before {
+    content: "항상같은말";
+    }
+
+.before_after >p::after {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+.selection >p::selection {
+    color: cadetblue;
+}
+
+[title*= "1"] {
+    background-color: fuchsia;
+}
+
+
+.not >p:not([title=n]) {
+    color:darkorange;
+}
+
+/*
+.은 속성값
+속성명은 그냥씀
+<p 속성명 = 속성값>
+*/

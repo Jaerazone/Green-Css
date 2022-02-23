@@ -1,0 +1,24 @@
+h1 {
+    background-color: #ff6600;
+    text-align: center;
+    padding: 20px;
+}
+
+div {
+    min-width: 200px;
+    border: 3px dashed black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+p {
+    min-width: 100px;
+    background-color: rgb(243, 243, 212);
+    padding: inherit;
+    padding-left: 30px;
+}
+/* inherit 부모의 값을 상속받는다
+    div 아래태그가 p라서 
+    패딩값 : inherit 이면
+    div의 패딩값을 p에 그대로 들고옴!
+*/

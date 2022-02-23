@@ -1,0 +1,71 @@
+.flex_box {
+    background-color: lightgray;
+    display: flex;
+    height: 300px;
+}
+
+.item, .item_1 {
+    width: 50px;
+    height: 30px;
+    background-color: darkorange;
+}
+
+.item_1 {
+    order: -1;
+    flex: auto;
+    align-self: center;
+}
+/* order : 0보다 작은수를 넣어주면 오더값때문에 순서가 바뀜
+    align-self 넣어주면 속성값적어준 이 item_1, 1개만 변경가능함
+*/
+.grid_box {
+    display: grid;
+    height: 400px;
+    background-color: lightgray;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid_box .item {
+    width: auto;
+    height: auto;
+}
+
+.item_g1 {
+    grid-row: 1/ span 2;
+    align-self: center;
+}
+.item_g2 {
+    grid-column: 2/4;
+    background-color: darkseagreen;
+}
+.grid_box_layout {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "a main b"
+        "footer footer footer"
+    ;
+
+    /*
+    grid-auto-flow: column; ///자동으로 column 아래방향으로 배치해줌
+    grid-auto-flow: row; ///자동으로 row 옆방향으로 배치해줌
+    */
+}
+
+
+.item_header {
+    grid-area: header;
+    background-color: cornflowerblue;
+}
+.item_a {
+grid-area: a;
+}
+.item_main {
+    grid-area: main;
+}
+.item_b {
+    grid-area: b;
+}
+.item_footer {
+    grid-area: footer;
+    background-color: cornflowerblue;
+}

@@ -1,0 +1,36 @@
+a{
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:link, a:visited {
+    color:black;
+}
+a:hover {
+    color:red;
+    background-color: rgb(71, 165, 42);
+}
+
+a:active {
+    color:yellow;
+    background-color:blue;
+}
+/*클릭했을때 active*/
+
+.unordered_list_mark{
+    list-style-type: square;
+    list-style-image: url(../img/pencil\ \(1\).png);
+    list-style-position: outside;
+}
+
+.ordered_list_mark {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+}
+
+li {
+    background-color: olive;
+}
